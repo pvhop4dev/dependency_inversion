@@ -3,7 +3,8 @@ package serviceb
 import (
 	"dependency_inversion/internal/interfaces"
 	"fmt"
-	"log"
+
+	"github.com/sirupsen/logrus"
 )
 
 type structB struct {
@@ -22,7 +23,7 @@ func (s *structB) GetB2() string {
 }
 
 func (s *structB) Register() {
-	log.Println("Register")
+	logrus.Println("Register")
 	interfaces.Register(s)
 }
 

@@ -3,7 +3,8 @@ package servicea
 import (
 	"dependency_inversion/internal/interfaces"
 	"fmt"
-	"log"
+
+	"github.com/sirupsen/logrus"
 )
 
 type structA struct {
@@ -22,7 +23,7 @@ func (s *structA) GetA2() string {
 }
 
 func (s *structA) Register() {
-	log.Println("Register")
+	logrus.Println("Register")
 	interfaces.Register(s)
 }
 

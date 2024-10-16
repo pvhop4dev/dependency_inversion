@@ -1,0 +1,108 @@
+[36mINFO[0m[2024-10-16 14:10:16]main.go:39 Initializing                                 
+[36mINFO[0m[2024-10-16 14:10:16]servicea.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:10:16]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:10:16]serviceb.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:10:16]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:10:16]servicec.go:28 Register                                     
+[36mINFO[0m[2024-10-16 14:10:16]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:10:16]main.go:49 *servicea.structA                            
+[36mINFO[0m[2024-10-16 14:10:16]main.go:49 *serviceb.structB                            
+[36mINFO[0m[2024-10-16 14:10:16]main.go:49 *servicec.structC                            
+[36mINFO[0m[2024-10-16 14:10:16]main.go:58 GetA1  from B1 B1                            
+[36mINFO[0m[2024-10-16 14:10:16]main.go:59 A2                                           
+[36mINFO[0m[2024-10-16 14:10:16]main.go:60 B1                                           
+[36mINFO[0m[2024-10-16 14:10:16]main.go:61 GetB2 from A2 A2                             
+[36mINFO[0m[2024-10-16 14:10:16]main.go:62 GetC1 from A1 GetA1  from B1 B1              
+[36mINFO[0m[2024-10-16 14:10:16]main.go:63 GetC2 from B2 GetB2 from A2 A2               
+[36mINFO[0m[2024-10-16 14:10:16]main.go:65 Info                                         
+[33mWARN[0m[2024-10-16 14:10:16]main.go:66 Warn                                         
+[31mERRO[0m[2024-10-16 14:10:16]main.go:67 Error                                        
+[31mFATA[0m[2024-10-16 14:10:16]main.go:69 Fatal                                        
+[36mINFO[0m[2024-10-16 14:11:41]main.go:39 Initializing                                 
+[36mINFO[0m[2024-10-16 14:11:41]servicea.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:11:41]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:11:41]serviceb.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:11:41]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:11:41]servicec.go:28 Register                                     
+[36mINFO[0m[2024-10-16 14:11:41]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:11:41]main.go:49 *servicea.structA                            
+[36mINFO[0m[2024-10-16 14:11:41]main.go:49 *serviceb.structB                            
+[36mINFO[0m[2024-10-16 14:11:41]main.go:49 *servicec.structC                            
+[36mINFO[0m[2024-10-16 14:11:41]main.go:58 GetA1  from B1 B1                            
+[36mINFO[0m[2024-10-16 14:11:41]main.go:59 A2                                           
+[36mINFO[0m[2024-10-16 14:11:41]main.go:60 B1                                           
+[36mINFO[0m[2024-10-16 14:11:41]main.go:61 GetB2 from A2 A2                             
+[36mINFO[0m[2024-10-16 14:11:41]main.go:62 GetC1 from A1 GetA1  from B1 B1              
+[36mINFO[0m[2024-10-16 14:11:41]main.go:63 GetC2 from B2 GetB2 from A2 A2               
+[37mDEBU[0m[2024-10-16 14:11:41]main.go:64 Debug                                        
+[36mINFO[0m[2024-10-16 14:11:41]main.go:65 Info                                         
+[33mWARN[0m[2024-10-16 14:11:41]main.go:66 Warn                                         
+[31mERRO[0m[2024-10-16 14:11:41]main.go:67 Error                                        
+[37mDEBU[0m[2024-10-16 14:11:41]main.go:68 Debug                                        
+[31mFATA[0m[2024-10-16 14:11:41]main.go:69 Fatal                                        
+[36mINFO[0m[2024-10-16 14:11:48]main.go:39 Initializing                                 
+[36mINFO[0m[2024-10-16 14:11:48]servicea.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:11:48]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:11:48]serviceb.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:11:48]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:11:48]servicec.go:28 Register                                     
+[36mINFO[0m[2024-10-16 14:11:48]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:11:48]main.go:49 *servicea.structA                            
+[36mINFO[0m[2024-10-16 14:11:48]main.go:49 *serviceb.structB                            
+[36mINFO[0m[2024-10-16 14:11:48]main.go:49 *servicec.structC                            
+[36mINFO[0m[2024-10-16 14:11:48]main.go:58 GetA1  from B1 B1                            
+[36mINFO[0m[2024-10-16 14:11:48]main.go:59 A2                                           
+[36mINFO[0m[2024-10-16 14:11:48]main.go:60 B1                                           
+[36mINFO[0m[2024-10-16 14:11:48]main.go:61 GetB2 from A2 A2                             
+[36mINFO[0m[2024-10-16 14:11:48]main.go:62 GetC1 from A1 GetA1  from B1 B1              
+[36mINFO[0m[2024-10-16 14:11:48]main.go:63 GetC2 from B2 GetB2 from A2 A2               
+[37mDEBU[0m[2024-10-16 14:11:48]main.go:64 Debug                                        
+[36mINFO[0m[2024-10-16 14:11:48]main.go:65 Info                                         
+[33mWARN[0m[2024-10-16 14:11:48]main.go:66 Warn                                         
+[31mERRO[0m[2024-10-16 14:11:48]main.go:67 Error                                        
+[37mDEBU[0m[2024-10-16 14:11:48]main.go:68 Debug                                        
+[31mFATA[0m[2024-10-16 14:11:48]main.go:69 Fatal                                        
+time=2024-10-16 14:12:42 level=info msg=Initializing file=main.go:39
+time=2024-10-16 14:12:42 level=info msg=Register file=servicea.go:26
+time=2024-10-16 14:12:42 level=info msg=Register file=services.go:31
+time=2024-10-16 14:12:42 level=info msg=Register file=serviceb.go:26
+time=2024-10-16 14:12:42 level=info msg=Register file=services.go:31
+time=2024-10-16 14:12:42 level=info msg=Register file=servicec.go:28
+time=2024-10-16 14:12:42 level=info msg=Register file=services.go:31
+time=2024-10-16 14:12:42 level=info msg=*servicea.structA file=main.go:49
+time=2024-10-16 14:12:42 level=info msg=*serviceb.structB file=main.go:49
+time=2024-10-16 14:12:42 level=info msg=*servicec.structC file=main.go:49
+time=2024-10-16 14:12:42 level=info msg=GetA1  from B1 B1 file=main.go:58
+time=2024-10-16 14:12:42 level=info msg=A2 file=main.go:59
+time=2024-10-16 14:12:42 level=info msg=B1 file=main.go:60
+time=2024-10-16 14:12:42 level=info msg=GetB2 from A2 A2 file=main.go:61
+time=2024-10-16 14:12:42 level=info msg=GetC1 from A1 GetA1  from B1 B1 file=main.go:62
+time=2024-10-16 14:12:42 level=info msg=GetC2 from B2 GetB2 from A2 A2 file=main.go:63
+time=2024-10-16 14:12:42 level=debug msg=Debug file=main.go:64
+time=2024-10-16 14:12:42 level=info msg=Info file=main.go:65
+time=2024-10-16 14:12:42 level=warning msg=Warn file=main.go:66
+time=2024-10-16 14:12:42 level=error msg=Error file=main.go:67
+time=2024-10-16 14:12:42 level=debug msg=Debug file=main.go:68
+time=2024-10-16 14:12:42 level=fatal msg=Fatal file=main.go:69
+[36mINFO[0m[2024-10-16 14:12:53]main.go:39 Initializing                                 
+[36mINFO[0m[2024-10-16 14:12:53]servicea.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:12:53]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:12:53]serviceb.go:26 Register                                     
+[36mINFO[0m[2024-10-16 14:12:53]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:12:53]servicec.go:28 Register                                     
+[36mINFO[0m[2024-10-16 14:12:53]services.go:31 Register                                     
+[36mINFO[0m[2024-10-16 14:12:53]main.go:49 *servicea.structA                            
+[36mINFO[0m[2024-10-16 14:12:53]main.go:49 *serviceb.structB                            
+[36mINFO[0m[2024-10-16 14:12:53]main.go:49 *servicec.structC                            
+[36mINFO[0m[2024-10-16 14:12:53]main.go:58 GetA1  from B1 B1                            
+[36mINFO[0m[2024-10-16 14:12:53]main.go:59 A2                                           
+[36mINFO[0m[2024-10-16 14:12:53]main.go:60 B1                                           
+[36mINFO[0m[2024-10-16 14:12:53]main.go:61 GetB2 from A2 A2                             
+[36mINFO[0m[2024-10-16 14:12:53]main.go:62 GetC1 from A1 GetA1  from B1 B1              
+[36mINFO[0m[2024-10-16 14:12:53]main.go:63 GetC2 from B2 GetB2 from A2 A2               
+[37mDEBU[0m[2024-10-16 14:12:53]main.go:64 Debug                                        
+[36mINFO[0m[2024-10-16 14:12:53]main.go:65 Info                                         
+[33mWARN[0m[2024-10-16 14:12:53]main.go:66 Warn                                         
+[31mERRO[0m[2024-10-16 14:12:53]main.go:67 Error                                        
+[37mDEBU[0m[2024-10-16 14:12:53]main.go:68 Debug                                        
+[31mFATA[0m[2024-10-16 14:12:53]main.go:69 Fatal                                        

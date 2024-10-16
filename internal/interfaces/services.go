@@ -1,6 +1,6 @@
 package interfaces
 
-import "log"
+import "github.com/sirupsen/logrus"
 
 var listModel []CoreModel
 
@@ -28,7 +28,7 @@ type IServiceC interface {
 }
 
 func Register(m CoreModel) {
-	log.Println("Register")
+	logrus.Println("Register")
 	listModel = append(listModel, m)
 }
 

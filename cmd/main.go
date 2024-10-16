@@ -5,14 +5,40 @@ import (
 	"dependency_inversion/internal/service/servicea"
 	"dependency_inversion/internal/service/serviceb"
 	"dependency_inversion/internal/service/servicec"
-	"log"
+	"fmt"
+	"io"
+	"os"
+	"path/filepath"
 	"reflect"
+	"runtime"
+
+	"github.com/sirupsen/logrus"
 )
 
 func init() {
-	log.Printf("Initializing")
-	log.SetFlags(log.Ldate | log.Ltime | log.Lmicroseconds | log.Lshortfile)
+	logFile, err := os.OpenFile("app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
+		logrus.Fatalf("Failed to open log file: %v", err)
+	}
+
+	multiWriter := io.MultiWriter(os.Stdout, logFile)
+	logrus.SetOutput(multiWriter)
+	logrus.SetFormatter(&logrus.TextFormatter{
+		FullTimestamp:   true,
+		TimestampFormat: "2006-01-02 15:04:05",
+		ForceColors:     true,
+		// DisableColors:   false,
+		DisableQuote:    true,
+		CallerPrettyfier: func(f *runtime.Frame) (string, string) {
+			filename := filepath.Base(f.File)
+			return "", fmt.Sprintf("%s:%d", filename, f.Line)
+		},
+	})
+	logrus.SetReportCaller(true)
+	logrus.SetLevel(logrus.TraceLevel)
+	logrus.Println("Initializing")
 }
+
 func main() {
 	a := servicea.NewStructA()
 	b := serviceb.NewStructB()
@@ -20,7 +46,7 @@ func main() {
 
 	coreModels := interfaces.GetList()
 	for _, model := range coreModels {
-		log.Println(reflect.TypeOf(model))
+		logrus.Println(reflect.TypeOf(model))
 	}
 
 	for _, model := range coreModels {
@@ -29,10 +55,16 @@ func main() {
 		}
 	}
 
-	log.Println(a.GetA1())
-	log.Println(a.GetA2())
-	log.Println(b.GetB1())
-	log.Println(b.GetB2())
-	log.Println(c.GetC1())
-	log.Println(c.GetC2())
+	logrus.Println(a.GetA1())
+	logrus.Println(a.GetA2())
+	logrus.Println(b.GetB1())
+	logrus.Println(b.GetB2())
+	logrus.Println(c.GetC1())
+	logrus.Println(c.GetC2())
+	logrus.Debugln("Debug")
+	logrus.Infoln("Info")
+	logrus.Warnln("Warn")
+	logrus.Errorln("Error")
+	logrus.Debugln("Debug")
+	logrus.Fatalf("Fatal")
 }

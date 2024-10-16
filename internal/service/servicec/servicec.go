@@ -3,7 +3,8 @@ package servicec
 import (
 	"dependency_inversion/internal/interfaces"
 	"fmt"
-	"log"
+
+	"github.com/sirupsen/logrus"
 )
 
 type structC struct {
@@ -24,7 +25,7 @@ func (s *structC) GetC2() string {
 }
 
 func (s *structC) Register() {
-	log.Println("Register")
+	logrus.Println("Register")
 	interfaces.Register(s)
 }
 
